@@ -13,3 +13,9 @@ Notes to check logic:
 
 - Check this.gameOver(false) (Game.js --- Line 90)
 - See if I need to add a space on textContent of spaces (Phrase.js --- Line 32)
+- Add hint on screen for disabled button keyboard press (app.js --- Line 42)
+- Show hint if keystroke other than letter
+- Ensure words aren't broken up - IMPORTANT
+-- Maybe add logic to choose which line to display on?
+
+Notes for submission:

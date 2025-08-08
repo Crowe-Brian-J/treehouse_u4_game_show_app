@@ -6,6 +6,7 @@
  * -- starts game in browser
  * keyboard button click:
  * -- ensures click is on a button element
+ * physical keyboard support
  */
 
 //global variable
@@ -28,4 +29,19 @@ qwerty.addEventListener('click', (e) => {
   if (e.target.tagName === 'BUTTON') {
     game.handleInteraction(e.target)
   }
+})
+
+//keyboard support
+document.addEventListener('keydown', (e) => {
+  //avoid caps lock and shift
+  const key = e.key.toLowerCase()
+  const allKeys = document.querySelectorAll('#qwerty button')
+
+  allKeys.forEach((button) => {
+    //prevent loss of life on disabled key
+    //see about adding hint on screen if user presses disabled key - CHECK ME LATER
+    if (button.textContent === key && !button.disabled) {
+      game.handleInteraction(button)
+    }
+  })
 })
