@@ -102,4 +102,24 @@ class Game {
 
     overlay.style.display = 'flex'
   }
+
+  resetGame = () => {
+    //get unordered list
+    const ul = document.querySelector('#phrase ul')
+    //clear phrase
+    ul.innerHTML = ''
+
+    //reset keyboard buttons
+    const keys = document.querySelectorAll('#qwerty button')
+    keys.forEach((key) => {
+      key.disabled = false
+      key.className = 'key'
+    })
+
+    //reset heart images
+    const hearts = document.querySelectorAll('.tries img')
+    hearts.forEach((heart) => {
+      heart.src = 'images/liveHeart.png'
+    })
+  }
 }

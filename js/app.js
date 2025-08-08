@@ -12,6 +12,7 @@ const qwerty = document.getElementById('qwerty')
 //start game with button click
 startButton.addEventListener('click', () => {
   game = new Game()
+  game.resetGame()
   game.startGame()
 })
 
