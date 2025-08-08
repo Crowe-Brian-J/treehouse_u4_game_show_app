@@ -84,8 +84,16 @@ class Game {
       button.classList.add('chosen')
       this.activePhrase.showMatchedLetter(letter)
 
+      //alter to add delay in win overlay so player can see the full phrase - DOCUMENT ABOVE
       if (this.checkForWin()) {
-        this.gameOver(true)
+        //add animation to winning phrase - DOCUMENT ABOVE
+        const phraseUl = document.querySelector('#phrase ul')
+        phraseUl.classList.add('phrase-win')
+        setTimeout(() => {
+          this.gameOver(true)
+          //clean up after gameover
+          phraseUl.classList.remove('phrase-win')
+        }, 4000)
       }
     }
   }

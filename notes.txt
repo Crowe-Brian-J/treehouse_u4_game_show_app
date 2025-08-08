@@ -24,3 +24,4 @@ Notes for submission:
 [ ] Added more phrases to increase variety
 [ ] Added logic for apostrophes as necessary
 [ ] Implement split words fix
+

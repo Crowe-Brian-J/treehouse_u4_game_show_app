@@ -83,11 +83,16 @@ button {
   margin-top: 15px;
 }
 
-/* need to keep words on same line */
+/* need to keep words on same line - .word & .space*/
 #phrase .word {
   white-space: nowrap;
   display: inline-block;
   margin-right: 10px;
+}
+
+#phrase .space {
+  display: inline-block;
+  width: 10px;
 }
 
 /* Title */
@@ -129,6 +134,12 @@ button {
   animation-duration: .5s;
 }
 
+/* add animation to phrase after win */
+.phrase-win .show {
+  background-color: var(--color-win); /* winning green */
+  color: white;
+  transition: background-color 1s ease;
+}
 
 /* Keyboard */
 
