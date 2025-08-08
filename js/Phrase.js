@@ -17,8 +17,7 @@ class Phrase {
 
   //display phrase on game board - adds letter placeholders to display when game starts
   //each letter presented as empty box
-  // -one li element for each letter
-  // -one li element for each space
+  // -one li element for each letter or space
   addPhraseToDisplay = () => {
     //get phrase div's ul
     const phraseUl = document.querySelector('#phrase ul')
@@ -33,6 +32,7 @@ class Phrase {
       //check space
       if (char === ' ') {
         li.className = 'space'
+        //---check if I need to add space for textContent when I get to populated phrases---CHECK ME LATER
         //otherwise letter
       } else {
         li.className = `hide letter ${char}`
@@ -42,9 +42,7 @@ class Phrase {
     })
   }
 
-  //checkLetter method
-  //take in letter player chooses, check vs this.phrase
-  //return true or false
+  //returns true if player's selected letter exists in phrase
   checkLetter = (letter) => this.phrase.includes(letter)
 
   //showMatchedLetter method
