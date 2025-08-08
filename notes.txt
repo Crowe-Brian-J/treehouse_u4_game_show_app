@@ -1,0 +1,15 @@
+Notes for adding more me to it:
+
+- Add more phrases (Game.js --- Line 31)
+- Remove ability to highlight letters in game - possibly just when hidden - current game reveals m's easily
+- See about adding opensource music - seems dull without
+- Look at adding retro styling - GameBoy?
+- Maybe Old West Theme because Hangman
+- Add a small delay before game over message
+- Fade in or Fade out animations
+- Visual cue for last remaining life
+
+Notes to check logic:
+
+- Check this.gameOver(false) (Game.js --- Line 90)
+- See if I need to add a space on textContent of spaces (Phrase.js --- Line 32)
