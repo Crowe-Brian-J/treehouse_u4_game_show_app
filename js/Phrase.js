@@ -41,4 +41,11 @@ class Phrase {
       phraseUl.appendChild(li)
     })
   }
+
+  //checkLetter method
+  //take in letter player chooses, check vs this.phrase
+  //return true or false
+  checkLetter = (letter) => this.phrase.includes(letter)
+
+  //showMatchedLetter method
 }
