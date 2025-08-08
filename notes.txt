@@ -1,6 +1,6 @@
 Notes for adding more me to it:
 
-- Add more phrases (Game.js --- Line 31)
+X Add more phrases (Game.js --- Line 31)
 - Remove ability to highlight letters in game - possibly just when hidden - current game reveals m's easily
 - See about adding opensource music - seems dull without
 - Look at adding retro styling - GameBoy?
@@ -12,10 +12,12 @@ Notes for adding more me to it:
 Notes to check logic:
 
 - Check this.gameOver(false) (Game.js --- Line 90)
-- See if I need to add a space on textContent of spaces (Phrase.js --- Line 32)
+X See if I need to add a space on textContent of spaces (Phrase.js --- Line 32)
 - Add hint on screen for disabled button keyboard press (app.js --- Line 42)
 - Show hint if keystroke other than letter
 - Ensure words aren't broken up - IMPORTANT
 -- Maybe add logic to choose which line to display on?
 
 Notes for submission:
+[ ] Added more phrases to increase variety
+[ ] Added logic for apostrophes as necessary

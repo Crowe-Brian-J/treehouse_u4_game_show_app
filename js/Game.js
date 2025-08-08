@@ -1,6 +1,6 @@
 /* Game.js file
  * sets Game class
- * stores phrases
+ * stores phrases - Now 20 total!
  * chooses active phrase
  * starts game
  * button click handler helper function
@@ -35,7 +35,22 @@ class Game {
       'Treehouse rocks',
       'Fullstack Developer',
       'Code and Energy Drinks',
-      'Object oriented programming'
+      'Object oriented programming', //5
+      'May the Force be with you',
+      'I am inevitable',
+      'I solemnly swear that I am up to no good',
+      'Keep calm and debug',
+      'Bugs are feature requests', //10
+      'Secret passage behind the bookshelf',
+      'Dancing in the moonlight',
+      'Purple elephants fly at dawn',
+      'To infinity and beyond',
+      'Hit the nail on the head', //15
+      "You can't handle the truth",
+      "Don't cry over spilled milk",
+      'Better late than never',
+      'The ball is in your court',
+      'Actions speak louder than words' //20
     ]
     return phrases.map((phrase) => new Phrase(phrase))
   }

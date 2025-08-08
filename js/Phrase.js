@@ -29,8 +29,10 @@ class Phrase {
       //check space
       if (char === ' ') {
         li.className = 'space'
-        //---check if I need to add space for textContent when I get to populated phrases---CHECK ME LATER
-        //otherwise letter
+        //check for apostrophe so I can add more phrases
+      } else if (char === "'") {
+        li.className = 'apostrophe'
+        li.textContent = "'"
       } else {
         li.className = `hide letter ${char}`
         li.textContent = char
