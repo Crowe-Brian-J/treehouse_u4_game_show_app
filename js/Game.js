@@ -108,8 +108,15 @@ class Game {
     //add to this.missed for next index
     this.missed++
 
+    //add special class for last remaining heart
+    if (this.missed === 4) {
+      hearts[4].classList.add('last-life')
+    } else if (this.missed > 4) {
+      //remove class when game over
+      hearts[4].classList.remove('last-life')
+    }
+
     if (this.missed === 5) {
-      //eyes going, logic going --- CHECK ME LATER
       this.gameOver(false)
     }
   }

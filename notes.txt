@@ -10,7 +10,7 @@ X Add a small delay before game over message
 
 Notes to check logic:
 
-X Check this.gameOver(false) (Game.js --- Line 90)
+X Check this.gameOver(false) (Game.js --- Line 90) - Comment deleted
 X See if I need to add a space on textContent of spaces (Phrase.js --- Line 32)
 - Add hint on screen for disabled button keyboard press (app.js --- Line 42)
 - Show hint if keystroke other than letter

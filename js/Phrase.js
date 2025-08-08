@@ -32,7 +32,7 @@ class Phrase {
       word.split('').forEach((letter) => {
         const li = document.createElement('li')
         li.className = `hide letter ${letter}`
-        //possibly add toUpperCase for legibility - CHECK ME LATER
+        //change toUpperCase for legibility in CSS - DOCUMENT ABOVE
         li.textContent = letter
         wordSpan.appendChild(li)
       })

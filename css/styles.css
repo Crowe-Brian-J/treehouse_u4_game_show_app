@@ -124,8 +124,6 @@ button {
   width: 15px;
 }
 
-
-
 .show {
   color: #fff;
   background-color: #4ac0d5;
@@ -182,6 +180,10 @@ button {
   border-right: solid 3px rgba(0, 0, 0, 0);
 }
 
+/* Display all phrase letters and keyboard characters in uppercase */
+#phrase li, .keyrow button {
+  text-transform: uppercase;
+}
 
 /* Overlay */
 
@@ -224,4 +226,20 @@ button {
 
 .lose a {
   color: var(--color-lose);
+}
+
+/* Make last life heart pulse and glow red - WCAG and everything */
+.last-life {
+  animation: pulseGlow 1.5s infinite;
+  filter: drop-shadow(0 0 5px #ff4d4d);
+  transition: filter 0.3s ease;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 5px #ff4d4d);
+  }
+  50% {
+    filter: drop-shadow(0 0 15px #ff0000);
+  }
 }
