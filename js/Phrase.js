@@ -14,58 +14,49 @@ class Phrase {
 
   //display phrase on game board - adds letter placeholders to display when game starts
   //each letter presented as empty box
-  // -one li element for each letter or space
+  // -one li element for each letter, apostrophe or space
   addPhraseToDisplay = () => {
     //get phrase div's ul
     const phraseUl = document.querySelector('#phrase ul')
     //clear any existing phrase
     phraseUl.innerHTML = ''
 
-    //logic to keep words from splitting lines - ADD TO NOTES
+    //split into words to protect boundaries
     const words = this.phrase.split(' ')
 
-    //
-    words.forEach((word) => {
+    words.forEach((word, wordIndex) => {
       const wordSpan = document.createElement('span')
       wordSpan.className = 'word'
 
-      word.split('').forEach((letter) => {
+      //now split word into characters
+      const chars = word.split('')
+
+      chars.forEach((char) => {
         const li = document.createElement('li')
-        li.className = `hide letter ${letter}`
-        //change toUpperCase for legibility in CSS - DOCUMENT ABOVE
-        li.textContent = letter
+
+        //check for letters or apostrophes
+        if (/^[a-z]$/i.test(char)) {
+          li.className = `hide letter ${char}`
+          li.textContent = char
+        } else {
+          li.className = 'apostrophe'
+          li.textContent = "'"
+        }
+
         wordSpan.appendChild(li)
       })
 
       phraseUl.appendChild(wordSpan)
 
-      //add space back between words
-      const space = document.createElement('span')
-      space.className = 'space'
-      phraseUl.appendChild(space)
+      //add space span after each word except the last one
+      if (wordIndex < words.length - 1) {
+        const spaceSpan = document.createElement('span')
+        spaceSpan.className = 'space'
+        spaceSpan.textContent = ' '
+        phraseUl.appendChild(spaceSpan)
+      }
     })
   }
-
-  //below commented out to fix word splitting problem - REVISIT
-  //Prettier doesn't like spread syntax of [...this.phrase as array here - assign to variable]
-  /*     const characters = this.phrase.split('')
-    //loop over characters to create html for game board
-    characters.forEach((char) => {
-      const li = document.createElement('li')
-      //check space
-      if (char === ' ') {
-        li.className = 'space'
-        //check for apostrophe so I can add more phrases
-      } else if (char === "'") {
-        li.className = 'apostrophe'
-        li.textContent = "'"
-      } else {
-        li.className = `hide letter ${char}`
-        li.textContent = char
-      }
-      phraseUl.appendChild(li)
-    })
-  } */
 
   //returns true if player's selected letter exists in phrase
   checkLetter = (letter) => this.phrase.includes(letter)
