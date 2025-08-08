@@ -21,8 +21,34 @@ class Phrase {
     //clear any existing phrase
     phraseUl.innerHTML = ''
 
-    //Prettier doesn't like spread syntax of [...this.phrase as array here - assign to variable]
-    const characters = this.phrase.split('')
+    //logic to keep words from splitting lines - ADD TO NOTES
+    const words = this.phrase.split(' ')
+
+    //
+    words.forEach((word) => {
+      const wordSpan = document.createElement('span')
+      wordSpan.className = 'word'
+
+      word.split('').forEach((letter) => {
+        const li = document.createElement('li')
+        li.className = `hide letter ${letter}`
+        //possibly add toUpperCase for legibility - CHECK ME LATER
+        li.textContent = letter
+        wordSpan.appendChild(li)
+      })
+
+      phraseUl.appendChild(wordSpan)
+
+      //add space back between words
+      const space = document.createElement('span')
+      space.className = 'space'
+      phraseUl.appendChild(space)
+    })
+  }
+
+  //below commented out to fix word splitting problem - REVISIT
+  //Prettier doesn't like spread syntax of [...this.phrase as array here - assign to variable]
+  /*     const characters = this.phrase.split('')
     //loop over characters to create html for game board
     characters.forEach((char) => {
       const li = document.createElement('li')
@@ -39,7 +65,7 @@ class Phrase {
       }
       phraseUl.appendChild(li)
     })
-  }
+  } */
 
   //returns true if player's selected letter exists in phrase
   checkLetter = (letter) => this.phrase.includes(letter)

@@ -83,6 +83,13 @@ button {
   margin-top: 15px;
 }
 
+/* need to keep words on same line */
+#phrase .word {
+  white-space: nowrap;
+  display: inline-block;
+  margin-right: 10px;
+}
+
 /* Title */
 
 .header {

@@ -28,7 +28,6 @@ class Game {
   }
 
   //create and return an array of Phrase objects
-  //---POSSIBLY ADD MORE---CHECK ME LATER
   createPhrases = () => {
     const phrases = [
       'JavaScript is fun',

@@ -8,6 +8,7 @@ X Add more phrases (Game.js --- Line 31)
 - Add a small delay before game over message
 - Fade in or Fade out animations
 - Visual cue for last remaining life
+- Make all characters uppercase on display - Wheel of Fortune
 
 Notes to check logic:
 
@@ -17,7 +18,9 @@ X See if I need to add a space on textContent of spaces (Phrase.js --- Line 32)
 - Show hint if keystroke other than letter
 - Ensure words aren't broken up - IMPORTANT
 -- Maybe add logic to choose which line to display on?
+- Add Logic to display correct phrase after win
 
 Notes for submission:
 [ ] Added more phrases to increase variety
 [ ] Added logic for apostrophes as necessary
+[ ] Implement split words fix
