@@ -75,8 +75,31 @@ class Game {
     this.missed++
 
     if (this.missed === 5) {
-      //eyes going, logic going - CHECK ME LATER
+      //eyes going, logic going --- CHECK ME LATER
       this.gameOver(false)
     }
+  }
+
+  //check if all letters revealed
+  checkForWin = () => {
+    const hiddenLetters = document.querySelectorAll('#phrase li.hide')
+    //boolean
+    return hiddenLetters.length === 0
+  }
+
+  //end game and display overlay with results
+  gameOver = (won) => {
+    const overlay = document.getElementById('overlay')
+    const message = document.getElementById('game-over-message')
+
+    if (won) {
+      overlay.className = 'win'
+      message.textContent = 'Great job! You won!'
+    } else {
+      overlay.className = 'lose'
+      message.textContent = 'Sorry, better luck next time!'
+    }
+
+    overlay.style.display = 'flex'
   }
 }
