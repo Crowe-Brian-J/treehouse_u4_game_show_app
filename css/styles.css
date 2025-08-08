@@ -1,5 +1,5 @@
 /* Main styles */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&Roboto:300');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 /* Variables */
 
@@ -11,8 +11,8 @@
   --color-neutral-light: #D2D2D2;
   --color-keys: #37474F;
   --color-keys-light: #E5E5E5;
-  --font-size-large: 60px;
-  --font-size-medium: 20px;
+  --font-size-large: 72px;
+  --font-size-medium: 30px;
   --transition: all .2s ease-in-out;
 }
 
@@ -20,7 +20,7 @@
 
 * {
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'VT323', monospace, monospace;
 }
 
 body {
@@ -129,7 +129,7 @@ button {
 .show {
   color: #fff;
   background-color: #4ac0d5;
-  font-size: 20px;
+  font-size: var(--font-size-medium);
   height: 65px;
   width: 65px;
   padding: 20px 1px 0 1px;

@@ -2,9 +2,7 @@ Notes for adding more me to it:
 
 X Add more phrases (Game.js --- Line 31)
 X Remove ability to highlight letters in game - possibly just when hidden - current game reveals m's easily
-- See about adding opensource music - seems dull without
-- Look at adding retro styling - GameBoy?
-- Maybe Old West Theme because Hangman
+X Look at adding retro styling - GameBoy?
 X Add a small delay before game over message
 - Fade in or Fade out animations
 - Visual cue for last remaining life
@@ -25,4 +23,5 @@ Notes for submission:
 [ ] Implement split words fix
 [ ] Add animation for winning letters - background color change
 [ ] Added logic to css to remove user-selectable hidden letters
+[ ] Changed font to feel more like Atari
 
