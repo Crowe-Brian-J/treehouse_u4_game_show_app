@@ -1,6 +1,9 @@
-/* Treehouse FSJS Techdegree
- * Project 4 - OOP Game App
- * Phrase.js
+/* Phrase.js file
+ * sets Phrase class
+ * structures phrase in lowerCase to check easier
+ * adds current phrase to gameboard
+ * checks player's selected letter
+ * shows matched letter if applicable
  */
 
 class Phrase {

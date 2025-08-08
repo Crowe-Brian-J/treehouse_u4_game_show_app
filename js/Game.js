@@ -1,6 +1,17 @@
-/* Treehouse FSJS Techdegree
- * Project 4 - OOP Game App
- * Game.js
+/* Game.js file
+ * sets Game class
+ * stores phrases
+ * chooses active phrase
+ * starts game
+ * button click handler helper function
+ * removes a life on incorrect guess
+ * checks for win after letter chosen
+ * sets game over message based on win or loss
+ * resets game board for next game:
+ * --clears phrase
+ * --resets keys
+ * --full hearts
+ * (Couldn't work in a Friday Night Lights reference there. I tried.)
  */
 
 class Game {

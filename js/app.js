@@ -1,6 +1,12 @@
-/* Treehouse FSJS Techdegree
- * Project 4 - OOP Game App
- * app.js */
+/* app.js file
+ * starts game as global variable because state needs to be accessed across event listeners
+ * start button click:
+ * -- initializes new Game
+ * -- resets game board
+ * -- starts game in browser
+ * keyboard button click:
+ * -- ensures click is on a button element
+ */
 
 //global variable
 let game
