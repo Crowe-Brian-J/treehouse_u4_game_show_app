@@ -1,13 +1,7 @@
 /* Treehouse FSJS Techdegree
  * Project 4 - OOP Game App
- * Phrase.js 
-
-  * Create the Phrase Class
-  * - include a constructor that receives a phrase parameter and initializes the following properties:
-  * -- addPhraseToDisplay()
-  * -- checkLetter()
-  * -- showMatchedLetter()
-*/
+ * Phrase.js
+ */
 
 class Phrase {
   constructor(phrase) {
