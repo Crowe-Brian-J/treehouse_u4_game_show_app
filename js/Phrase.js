@@ -48,4 +48,13 @@ class Phrase {
   checkLetter = (letter) => this.phrase.includes(letter)
 
   //showMatchedLetter method
+  //reveal letter(s) on screen that match the player's selection
+  //remove the 'hide' class and add 'show' class to matching letters
+  showMatchedLetter = (letter) => {
+    const matchedLetters = document.querySelectorAll(`.letter.${letter}`)
+    matchedLetters.forEach((el) => {
+      el.classList.remove('hide')
+      el.classList.add('show')
+    })
+  }
 }
