@@ -95,6 +95,11 @@ button {
   width: 10px;
 }
 
+/* Had to hide selectability because it was easy to determine letter based on shape of highlight box */
+.hide {
+  user-select: none;
+}
+
 /* Title */
 
 .header {
