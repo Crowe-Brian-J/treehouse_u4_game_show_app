@@ -27,7 +27,7 @@ class Game {
     this.activePhrase = null
   }
 
-  //create and return an array of Phrase objects
+  //create and return an array of Phrase objects - Look at removing apostrophes
   createPhrases = () => {
     const phrases = [
       'JavaScript is fun',
@@ -70,6 +70,7 @@ class Game {
     this.activePhrase = this.getRandomPhrase()
     this.activePhrase.addPhraseToDisplay()
 
+    //strictly for mobile UI
     adjustPhraseFontSize()
   }
 

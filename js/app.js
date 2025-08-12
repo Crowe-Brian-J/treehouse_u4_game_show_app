@@ -7,7 +7,7 @@
  * keyboard button click:
  * -- ensures click is on a button element
  * physical keyboard support
- * add dynamic resizing logic to
+ * add dynamic resizing logic to mobile
  */
 
 //global variable(s)
