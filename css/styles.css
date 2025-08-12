@@ -210,14 +210,6 @@ button:disabled {
   text-transform: uppercase;
 }
 
-/* Fix apostrophe placement */
-.apostrophe {
-  font-size: 1.5em;
-  position: relative;
-  top: -5px;
-  font-weight: bold;
-}
-
 /* Overlay */
 
 #overlay {

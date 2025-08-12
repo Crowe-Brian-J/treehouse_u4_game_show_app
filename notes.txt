@@ -4,27 +4,27 @@ X Add more phrases (Game.js --- Line 31)
 X Remove ability to highlight letters in game - possibly just when hidden - current game reveals m's easily
 X Look at adding retro styling - GameBoy?
 X Add a small delay before game over message
-- Fade in or Fade out animations
-- Visual cue for last remaining life
-- Make all characters uppercase on display - Wheel of Fortune
+X Fade in or Fade out animations
+X Visual cue for last remaining life
+X Make all characters uppercase on display - Wheel of Fortune
 
 Notes to check logic:
 
 X Check this.gameOver(false) (Game.js --- Line 90) - Comment deleted
 X See if I need to add a space on textContent of spaces (Phrase.js --- Line 32)
-- Add hint on screen for disabled button keyboard press (app.js --- Line 42)
+X Add hint on screen for disabled button keyboard press (app.js --- Line 42)
 - Show hint if keystroke other than letter
 X Ensure words aren't broken up - IMPORTANT
-- Add Logic to display correct phrase after win
-- Add focus to start game button for enter to work?
+X Add Logic to display correct phrase after win
 
 Notes for submission:
-[ ] Added more phrases to increase variety
-[ ] Added logic for apostrophes as necessary
-[ ] Implement split words fix
-[ ] Add animation for winning letters - background color change
-[ ] Added logic to css to remove user-selectable hidden letters
-[ ] Changed font to feel more like Atari
-[ ] Styling Changes
-[ ] Keyboard listener only works if input is a-z
-[ ] Layout for Mobile - Keyboard still kind of weird, but spaced well
+[X] Added more phrases to increase variety
+[X] Added logic for apostrophes as necessary
+[X] Implement split words fix
+[X] Add animation for winning letters - background color change
+[X] Added logic to css to remove user-selectable hidden letters
+[X] Changed font to feel more like Atari
+[X] Styling Changes
+[X] Keyboard listener only works if input is a-z
+[X] Layout for Mobile - Keyboard still kind of weird, but spaced well
+[X] Add winning phrase to overlay on win or loss

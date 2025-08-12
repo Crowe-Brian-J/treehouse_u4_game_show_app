@@ -34,14 +34,9 @@ class Phrase {
       chars.forEach((char) => {
         const li = document.createElement('li')
 
-        //check for letters or apostrophes
-        if (/^[a-z]$/i.test(char)) {
-          li.className = `hide letter ${char}`
-          li.textContent = char
-        } else {
-          li.className = 'apostrophe'
-          li.textContent = "'"
-        }
+        //check letters
+        li.className = `hide letter ${char}`
+        li.textContent = char
 
         wordSpan.appendChild(li)
       })

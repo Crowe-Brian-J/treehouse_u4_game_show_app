@@ -45,8 +45,8 @@ class Game {
       'Purple elephants fly at dawn',
       'To infinity and beyond',
       'Hit the nail on the head', //15
-      "You can't handle the truth",
-      "Don't cry over spilled milk",
+      'Reach for the stars',
+      'There is no crying in coding',
       'Better late than never',
       'The ball is in your court',
       'Actions speak louder than words' //20
