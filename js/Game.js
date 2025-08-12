@@ -136,6 +136,14 @@ class Game {
     const overlay = document.getElementById('overlay')
     const message = document.getElementById('game-over-message')
 
+    //get the phrase text from activePhrase
+    const phraseText = this.activePhrase.phrase
+
+    //use added element in html to show phrase
+    let phraseReveal = document.getElementById('phrase-reveal')
+
+    phraseReveal.textContent = `The winning phrase was: "${phraseText}"`
+
     if (won) {
       overlay.className = 'win'
       message.textContent = 'Great job! You won!'

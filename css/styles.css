@@ -108,6 +108,14 @@ button:disabled {
   user-select: none;
 }
 
+/* change phrase-reveal text size */
+#phrase-reveal {
+  font-size: 1.75rem !important;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #fff;
+}
+
 /* Title */
 
 .header {
