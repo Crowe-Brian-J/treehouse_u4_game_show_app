@@ -1,8 +1,6 @@
 # Game Show App - Treehouse Unit 4 Project
 I am going for an exceeds expectations grade.
-
 ---
-
 ## App Styles and Personalizations
 (in order of application)
 - I added 20 total phrases because the same ones repeated too often.
