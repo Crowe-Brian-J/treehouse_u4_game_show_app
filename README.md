@@ -14,6 +14,7 @@ I am going for an exceeds expectations grade.
 - I added more logic for guesses. If the letter has already been guessed and the player attempts to type it in (the virtual keyboard disables the letter from being clicked), it shakes and a hint is displayed on screen. The incorrect guesses also turn red now instead of the standard navy color that previous correct guesses get. The red to navy difference met WCAG ratio standards for the color blind. The last heart/life at the bottom also pulses red when all other lives are exhausted.
 - I added a css layout for mobile. While I think the keyboard layout still looks weird, it functions as intended and fits on mobile screens (same with phrase).
 - I added the winning phrase to the overlay on both winning and losing games. I figured the winning player may miss the 4 second window I gave to see the phrase and the losing player may want to see how close they were to winning.
+- I had apostrophes working in the previous commits. I removed the logic and phrases pertaining to it because the rubric was clear that for some reason no special characters, numbers, or punctuation were to be included. While I understand this is probably to keep logic errors to a minimum, I also wonder if this prevents us from more robust logic.
 ---
 ## Project Instructions
 1. Create the *Phrase* Class in the *phrase.js* File
