@@ -27,7 +27,10 @@ body {
   justify-content: space-evenly;
   flex-direction: column;
   display: flex;
-  height: 100vh;
+  /* adjusment for mobile */
+  height: auto;
+  min-height: 100vh;
+  overflow-y: auto;
 }
 
 li, ol, ul {
@@ -249,5 +252,49 @@ button {
   }
   50% {
     filter: drop-shadow(0 0 15px #ff0000);
+  }
+}
+
+@media (max-width: 600px) {
+  /* Reduce font sizes */
+  :root {
+    --font-size-large: 48px;
+    --font-size-medium: 20px;
+  }
+
+  /* Phrase letters */
+  .letter, .show {
+    height: 45px;
+    width: 45px;
+    padding-top: 12px;
+    font-size: var(--font-size-medium);
+  }
+
+  /* Keyboard buttons */
+  #qwerty button {
+    font-size: 18px;
+    padding: 0.4rem 0.6rem;
+    margin: 4px;
+  }
+
+  /* Space between words in phrase */
+  #phrase .space {
+    width: 8px;
+  }
+
+  /* Keep overlay text readable */
+  #overlay h2 {
+    font-size: 40px;
+  }
+
+    .keyrow {
+    flex-wrap: wrap;
+    gap: 4px; /* adds a little space between keys */
+  }
+
+  .keyrow button {
+    flex: 1 0 12%; /* shrink buttons to fit smaller screens */
+    font-size: 1.2rem; /* adjust size if needed */
+    padding: 8px;
   }
 }

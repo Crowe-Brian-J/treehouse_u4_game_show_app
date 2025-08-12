@@ -24,4 +24,6 @@ Notes for submission:
 [ ] Add animation for winning letters - background color change
 [ ] Added logic to css to remove user-selectable hidden letters
 [ ] Changed font to feel more like Atari
-
+[ ] Styling Changes
+[ ] Keyboard listener only works if input is a-z
+[ ] Layout for Mobile - Keyboard still kind of weird, but spaced well
