@@ -16,6 +16,7 @@ X See if I need to add a space on textContent of spaces (Phrase.js --- Line 32)
 - Show hint if keystroke other than letter
 X Ensure words aren't broken up - IMPORTANT
 - Add Logic to display correct phrase after win
+- Add focus to start game button for enter to work?
 
 Notes for submission:
 [ ] Added more phrases to increase variety

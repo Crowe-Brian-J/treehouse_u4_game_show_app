@@ -147,6 +147,15 @@ button {
   transition: background-color 1s ease;
 }
 
+/* add repeated input hint */
+#input-hint {
+  color: #d94545; /* Red-ish for alert */
+  margin-top: 10px;
+  min-height: 2em; /* reserves space to prevent layout jump */
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
 /* Keyboard */
 
 .keyrow {
@@ -254,20 +263,31 @@ button {
     filter: drop-shadow(0 0 15px #ff0000);
   }
 }
+/* Add shake and color change for repeated input */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-5px); }
+  40%, 80% { transform: translateX(5px); }
+}
+
+.shake {
+  animation: shake 0.4s ease-in-out;
+  background-color: #f7a964; /* subtle orange to catch attention */
+  color: white !important;
+  border-radius: 5px;
+}
 
 @media (max-width: 600px) {
+  .main-container {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+  }
   /* Reduce font sizes */
   :root {
     --font-size-large: 48px;
     --font-size-medium: 20px;
-  }
-
-  /* Phrase letters */
-  .letter, .show {
-    height: 45px;
-    width: 45px;
-    padding-top: 12px;
-    font-size: var(--font-size-medium);
   }
 
   /* Keyboard buttons */
@@ -279,7 +299,35 @@ button {
 
   /* Space between words in phrase */
   #phrase .space {
-    width: 8px;
+    width: 4px;
+  }
+
+  /* Make phrase words smaller to fit on screen */
+  #phrase ul li,
+  .letter,
+  .show {
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+    padding-top: 8px; /* adjust as needed for vertical alignment */
+    margin-top: 8px;
+  }
+
+  /* adjust phrase to fit on mobile screen better */
+  #phrase ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px;
+    padding-left: 0;
+  }
+
+  #phrase .word {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1px;
+    white-space: nowrap;
+    margin: 0;
   }
 
   /* Keep overlay text readable */
@@ -289,12 +337,13 @@ button {
 
     .keyrow {
     flex-wrap: wrap;
-    gap: 4px; /* adds a little space between keys */
+    gap: 2px; /* adds a little space between keys */
   }
 
   .keyrow button {
     flex: 1 0 12%; /* shrink buttons to fit smaller screens */
-    font-size: 1.2rem; /* adjust size if needed */
-    padding: 8px;
+    font-size: 1rem; /* adjust size if needed */
+    padding: 4px;
   }
+
 }

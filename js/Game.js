@@ -69,6 +69,8 @@ class Game {
     //select and display a random phrase
     this.activePhrase = this.getRandomPhrase()
     this.activePhrase.addPhraseToDisplay()
+
+    adjustPhraseFontSize()
   }
 
   //handle onscreen keyboard interaction
