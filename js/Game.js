@@ -152,6 +152,10 @@ class Game {
       message.textContent = 'Sorry, better luck next time!'
     }
 
+    //remove last-life class on heart[4] at game over
+    const hearts = document.querySelectorAll('.tries img')
+    hearts.forEach((heart) => heart.classList.remove('last-life'))
+
     overlay.style.display = 'flex'
   }
 
